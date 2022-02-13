@@ -1,5 +1,5 @@
 
-let ws = new WebSocket('wss://my-ws-test.herokuapp.com')
+let ws = new WebSocket('wss://'+location.hostname+'.com')
 let h1=document.getElementById('h1')
 let canvas=document.getElementById('canvas')
 let ctx=canvas.getContext('2d')
@@ -14,7 +14,6 @@ function init(){
             id=e.data
             return
         }
-        console.log(e.data)
         objs=JSON.parse(e.data)
     }
     ws.onclose = () => {
