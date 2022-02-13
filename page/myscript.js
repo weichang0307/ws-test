@@ -1,5 +1,5 @@
 
-let ws = new WebSocket('ws://my-ws-test.herokuapp.com')
+let ws = new WebSocket('wss://my-ws-test.herokuapp.com')
 let h1=document.getElementById('h1')
 let canvas=document.getElementById('canvas')
 let ctx=canvas.getContext('2d')
