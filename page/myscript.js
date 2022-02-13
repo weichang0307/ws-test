@@ -1,5 +1,5 @@
 
-let ws = new WebSocket('wss://'+location.hostname+'.com')
+let ws = new WebSocket('wss://'+location.hostname)
 let h1=document.getElementById('h1')
 let canvas=document.getElementById('canvas')
 let ctx=canvas.getContext('2d')
